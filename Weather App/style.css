@@ -1,0 +1,141 @@
+body {
+   font-family: "Raleway", sans-serif;
+   background-color: #e0e0e0;
+   color: #707070;
+   margin: 0;
+   padding: 0;
+}
+ul {
+   list-style: none;
+}
+.day .container {
+   max-width: 400px;
+   min-width: 400px;
+}
+.title {
+   font-weight: 700;
+   font-size: 50px;
+}
+.search-location i {
+   position: absolute;
+   right: 20px;
+   font-size: 18px;
+}
+.form-rounded {
+   border-radius: 2em;
+}
+.dorpdown {
+   width: 100%;
+   left: 0;
+   top: 80px;
+   z-index: 2;
+   border-radius: 2em;
+}
+.dorpdown ul {
+   padding: 15px;
+}
+.dorpdown li {
+   padding: 10px;
+   transition: 0.3s all;
+   border-bottom: 1px solid #e0e0e0;
+}
+.dorpdown li:hover {
+   background-color: #e9e9e9;
+   padding-left: 20px;
+   cursor: pointer;
+}
+.back-card {
+   border-radius: 40px !important;
+}
+.city-name {
+   position: absolute;
+   width: 100%;
+}
+.city-name p {
+   font-size: 20px;
+   font-weight: 400;
+}
+.city-name span {
+   font-weight: 400;
+   font-size: 36px;
+   font-family: "Times New Roman", Times, serif;
+   position: relative;
+   top: -50px;
+}
+.temp span {
+   font-weight: 100;
+   font-size: 5em;
+   letter-spacing: -5px;
+   white-space: nowrap;
+}
+.card-mid {
+   line-height: 0.5;
+}
+.condition {
+   line-height: 1em;
+   font-weight: 700;
+   font-size: 1em;
+   text-transform: capitalize;
+}
+.high::before {
+   content: "";
+   background: url(img/up.svg) no-repeat;
+   width: 10px;
+   height: 15px;
+   display: inline-block;
+   position: relative;
+   top: 3px;
+}
+.low::before {
+   content: "";
+   background: url(img/down.svg) no-repeat;
+   width: 10px;
+   height: 15px;
+   display: inline-block;
+   position: relative;
+   top: 3px;
+}
+.icon-container {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   background: #202020;
+}
+.icon-container img {
+   margin: auto;
+   height: 60px;
+}
+.card-bottom {
+   line-height: 0.5;
+}
+.card-bottom p {
+   font-size: 50px;
+   font-weight: 100;
+   letter-spacing: -3px;
+}
+@media (max-width: 768px) {
+   .week .container {
+      max-width: 400px;
+      min-width: 400px;
+   }
+}
+.week .temp span {
+   font-size: 4em;
+}
+.week .icon-container {
+   width: 75px;
+   height: 75px;
+}
+.week .icon-container img {
+   width: 40px;
+}
+.week .card-bottom p {
+   font-size: 32px;
+}
+.week .card {
+   transition: all 0.3s;
+}
+.week .card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35) !important ;
+}
